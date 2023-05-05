@@ -1,4 +1,5 @@
 //> using scala "2.12", "2.13", "3"
+//> using jvm "8"
 //> using lib "com.lihaoyi::os-lib:0.9.1"
 //> using lib "org.scala-lang.modules::scala-collection-compat:2.9.0"
 //> using option "-deprecation"
