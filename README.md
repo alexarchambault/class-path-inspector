@@ -2,10 +2,16 @@
 
 A tiny library to help inspect a JVM app class path.
 
+From Scala CLI:
 ```scala
 //> using lib "io.github.alexarchambault::class-path-inspector:latest.release"
-import classpath.Inspector
-Inspector.classPath().toVector // Vector[(ClassLoader, Seq[URL])]
+classpath.Inspector.classPath().toVector // Vector[(ClassLoader, Seq[URL])]
+```
+
+From Ammonite:
+```scala
+import $ivy.`io.github.alexarchambault::class-path-inspector:latest.release`
+classpath.Inspector.classPath().toVector // Vector[(ClassLoader, Seq[URL])]
 ```
 
 `Inspector.classPath` returns loaders and their URLs from the closest loader
